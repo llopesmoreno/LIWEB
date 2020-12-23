@@ -1,0 +1,64 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30114.105
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3.Domain", "3.Domain", "{455D38B6-37C6-495B-865F-05295A95E774}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LIWEB.Domain", "LIWEB.Domain\LIWEB.Domain.csproj", "{AB5BF8B9-9E1C-495A-9124-A6105FD9319E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4.Infra", "4.Infra", "{AE84AE37-7E40-4F4A-82A5-0A0604833993}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LIWEB.RepositorioMongoDb", "LIWEB.RepositorioMongoDb\LIWEB.RepositorioMongoDb.csproj", "{854F9AFB-350D-4972-92B3-D8C31A1A46DC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2.App", "2.App", "{4A9CB2DE-9B34-4530-94AF-0F5C64705197}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LIWEB.Aplicacao", "LIWEB.Aplicacao\LIWEB.Aplicacao.csproj", "{036DF16C-0E2F-4CE3-B866-E2C7B15063FA}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LIWEB.InjecaoDependencias", "LIWEB.InjecaoDependencias\LIWEB.InjecaoDependencias.csproj", "{D2085211-CE76-4E18-91E9-E898B8371D53}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1.Host", "1.Host", "{BFF4F5FE-A493-43B9-B817-821D9DC814E6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LIWEB.AuthAPI", "LIWEB.AuthAPI\LIWEB.AuthAPI.csproj", "{022CEC20-45E6-4233-A161-0A3EA55607F0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AB5BF8B9-9E1C-495A-9124-A6105FD9319E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AB5BF8B9-9E1C-495A-9124-A6105FD9319E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AB5BF8B9-9E1C-495A-9124-A6105FD9319E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AB5BF8B9-9E1C-495A-9124-A6105FD9319E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{854F9AFB-350D-4972-92B3-D8C31A1A46DC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{854F9AFB-350D-4972-92B3-D8C31A1A46DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{854F9AFB-350D-4972-92B3-D8C31A1A46DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{854F9AFB-350D-4972-92B3-D8C31A1A46DC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{036DF16C-0E2F-4CE3-B866-E2C7B15063FA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{036DF16C-0E2F-4CE3-B866-E2C7B15063FA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{036DF16C-0E2F-4CE3-B866-E2C7B15063FA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{036DF16C-0E2F-4CE3-B866-E2C7B15063FA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D2085211-CE76-4E18-91E9-E898B8371D53}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D2085211-CE76-4E18-91E9-E898B8371D53}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D2085211-CE76-4E18-91E9-E898B8371D53}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D2085211-CE76-4E18-91E9-E898B8371D53}.Release|Any CPU.Build.0 = Release|Any CPU
+		{022CEC20-45E6-4233-A161-0A3EA55607F0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{022CEC20-45E6-4233-A161-0A3EA55607F0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{022CEC20-45E6-4233-A161-0A3EA55607F0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{022CEC20-45E6-4233-A161-0A3EA55607F0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{AB5BF8B9-9E1C-495A-9124-A6105FD9319E} = {455D38B6-37C6-495B-865F-05295A95E774}
+		{854F9AFB-350D-4972-92B3-D8C31A1A46DC} = {AE84AE37-7E40-4F4A-82A5-0A0604833993}
+		{036DF16C-0E2F-4CE3-B866-E2C7B15063FA} = {4A9CB2DE-9B34-4530-94AF-0F5C64705197}
+		{D2085211-CE76-4E18-91E9-E898B8371D53} = {AE84AE37-7E40-4F4A-82A5-0A0604833993}
+		{022CEC20-45E6-4233-A161-0A3EA55607F0} = {BFF4F5FE-A493-43B9-B817-821D9DC814E6}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {81784DD5-F434-4EE7-BB02-C95BFE16FD45}
+	EndGlobalSection
+EndGlobal
