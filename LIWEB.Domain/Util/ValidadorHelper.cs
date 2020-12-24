@@ -7,7 +7,7 @@ namespace LIWEB.Domain.Util
 {
     public static class ValidadorHelper 
     {
-        public static bool EntidadeInvalida<T>(this IEnumerable<T> entidades, IValidator<T> validator, INotificador notificador) where T : Entidade
+        public static bool EntidadeInvalida<T>(this IEnumerable<T> entidades, IValidator<T> validator, INotificador notificador)
         {
             foreach (var item in entidades)
             {
@@ -23,7 +23,7 @@ namespace LIWEB.Domain.Util
             return notificador.TemNotificacao();
         }
 
-        public static bool EntidadeInvalida<T>(this T entidade, IValidator<T> validator, INotificador notificador) where T : Entidade
+        public static bool EntidadeInvalida<T>(this T entidade, IValidator<T> validator, INotificador notificador)
         {
             var validacoesResultado = validator.Validate(entidade);
 
