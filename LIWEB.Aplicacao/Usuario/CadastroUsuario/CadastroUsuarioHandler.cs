@@ -23,7 +23,7 @@ namespace LIWEB.Aplicacao.Usuario.CadastroUsuario
 
         public Task<CadastroUsuarioResponse> Handle(CadastroUsuarioRequest request, CancellationToken cancellationToken)
         {
-            throw new NotImplementedException();
+            throw new NotImplementedException("não implementado");
         }
     }
 }

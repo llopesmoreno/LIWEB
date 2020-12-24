@@ -37,12 +37,7 @@ namespace LIWEB.InjecaoDependencias
 
         private static void RegistrarRepositorios(IServiceCollection services, string conexaoMongo, string nomeBaseMongo)
         {
-            var dataBaseSettings = new MongoDatabaseSettings
-            {
-                GuidRepresentation = MongoDB.Bson.GuidRepresentation.Standard
-            };
-
-            var mongoCliente = new MongoClient(conexaoMongo).GetDatabase(nomeBaseMongo, dataBaseSettings);
+            var mongoCliente = new MongoClient(conexaoMongo).GetDatabase(nomeBaseMongo);
             services.AddSingleton(s => mongoCliente);
 
             services.AddScoped<IUsuarioRepositorio, RepositorioUsuario>();
@@ -66,6 +61,6 @@ namespace LIWEB.InjecaoDependencias
             var httpClient = new System.Net.Http.HttpClient(clientHandler);
 
             services.AddSingleton(httpClient);
-        }
+        }        
     }
 }

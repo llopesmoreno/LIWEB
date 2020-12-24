@@ -73,17 +73,19 @@ namespace LIWEB.AuthAPI
 
             app.UseExceptionHandler(handler =>
             {
-                handler.Run(async context =>
+                handler.Run(async context => 
                 {
                     var exception = context.Features.Get<IExceptionHandlerFeature>();
 
-                    //if (exception != null) IMPLEMENTAR LOG DE ERROS
-                    //    logger.LogError(500, "Mensagem {mesagem} trace: {result}", exception.Error.Message, exception.Error.StackTrace);
+                    var erroServidorRespostaPadrao = new ErroServidorRespostaPadraoModel();
+                    if (exception != null)
+                    {   
+                        logger.LogError(500, "mensagem: {mesagem} trace: {result}, protocolo: {protocolo}", exception.Error.Message, exception.Error.StackTrace, erroServidorRespostaPadrao.Protocolo);
+                    }
 
                     context.Response.StatusCode = 500;
                     context.Response.ContentType = "application/json; charset=utf-8";
 
-                    var erroServidorRespostaPadrao = new ErroServidorRespostaPadraoModel();
 
                     var jsonStringResposta = JsonSerializer.Serialize(erroServidorRespostaPadrao);
 
